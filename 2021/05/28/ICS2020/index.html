@@ -14,7 +14,7 @@
 <meta property="og:description" content="编程实践–verbose 拆解命令在执行时 gcc解析了哪些include 阅读MakeFile并行很重要 1basename $PWD  make -B 强制make所有的目标     -n 只打印命令不运行 123make -nB \ |grep -ve &amp;#x27;^\(\#\|echo\|mkdir\)&amp;#x27; \ |vim -  删除多行,选择板块： ctrl+v 删除宏定义: 12">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-05-28T15:01:18.000Z">
-<meta property="article:modified_time" content="2021-05-30T12:38:59.432Z">
+<meta property="article:modified_time" content="2021-05-30T15:55:11.024Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -121,36 +121,22 @@
 <p>Vim中支持 </p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:vimgrep /\&lt;main\&gt;/ **/*.c</span><br></pre></td></tr></table></figure>
 
+<p>寻找较深的文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi **/**/gen.expr.c</span><br></pre></td></tr></table></figure>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<p>查找目录fzf</p>
+<p>查看一下man 3 getopt</p>
+<p>测试nemu</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;q&quot;|./build/x86-nemu-interpreter</span><br><span class="line">./build/x86-nemu-interpreter &lt; in.txt &gt; out.txt</span><br></pre></td></tr></table></figure>
+<p>也可写在Makefile中,也可用map绑定快捷键</p>
+<p>进入main.c</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi .</span><br><span class="line">:tjump main</span><br></pre></td></tr></table></figure>
+<p>Mark        ~ma ,’a , mA , ‘A<br>Tags         ~:jumps , C-] , C-i , C-o , :tjump<br>Tags/Windows    ~:tabnew , gt , gT<br>Folding        ~:zc , zo , zR</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/28/ICS2020/" data-id="ckpaxbdw50000ewu6e02jdgwb" data-title="ICS2020 -01" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/05/28/ICS2020/" data-id="ckpbd7kmg0000fou6cnh15kl8" data-title="ICS2020 -01" class="article-share-link">Share</a>
       
       
       
