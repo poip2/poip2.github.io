@@ -85,7 +85,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/05/28/ICS2020/">ICS2020</a>
+      <a class="p-name article-title" href="/2021/05/28/ICS2020/">ICS2020 -01</a>
     </h1>
   
 
@@ -95,16 +95,60 @@
       
         <h3 id="编程实践"><a href="#编程实践" class="headerlink" title="编程实践"></a>编程实践</h3><p>–verbose 拆解命令在执行时 gcc解析了哪些include</p>
 <h3 id="阅读MakeFile"><a href="#阅读MakeFile" class="headerlink" title="阅读MakeFile"></a>阅读MakeFile</h3><p>并行很重要</p>
-<p>basename $PWD</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">basename $PWD</span><br></pre></td></tr></table></figure>
+
 <p>make -B 强制make所有的目标<br>     -n 只打印命令不运行</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">make -nB \ </span><br><span class="line">|grep -ve &#x27;^\(\#\|echo\|mkdir\)&#x27; \ </span><br><span class="line">|vim -</span><br></pre></td></tr></table></figure>
 
-<p>删除多行  ctrl+v  </p>
-<h3 id="阅读NEMU源码"><a href="#阅读NEMU源码" class="headerlink" title="阅读NEMU源码"></a>阅读NEMU源码</h3>
+<p>删除多行,选择板块： ctrl+v</p>
+<p>删除宏定义:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">%</span><span class="bash">s/-D[^ ]* //g</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>把空格换成换行:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x27;&lt;,&#x27;&gt;s/  /\r /g</span><br></pre></td></tr></table></figure>
+
+<p>代码和文档结合</p>
+<h3 id="阅读NEMU源码"><a href="#阅读NEMU源码" class="headerlink" title="阅读NEMU源码"></a>阅读NEMU源码</h3><p>查看目录结构 tree .</p>
+<p>查找文件 </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . -name &quot;*.c&quot;</span><br></pre></td></tr></table></figure>
+
+<p>查看项目规模 </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find ... | xargs cat | wc -l</span><br></pre></td></tr></table></figure>
+<p>在命令行中查找 </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grep -n main $(find -name &quot;*.c&quot;)</span><br><span class="line">find  | xargs grep  --color -nse &#x27;\&lt;main\&gt;&#x27;</span><br></pre></td></tr></table></figure>
+<p>Vim中支持 </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:vimgrep /\&lt;main\&gt;/ **/*.c</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/28/ICS2020/" data-id="ckpaxbdw50000ewu6e02jdgwb" data-title="ICS2020" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/05/28/ICS2020/" data-id="ckpaxbdw50000ewu6e02jdgwb" data-title="ICS2020 -01" class="article-share-link">Share</a>
       
       
       
@@ -239,7 +283,7 @@
       <ul>
         
           <li>
-            <a href="/2021/05/28/ICS2020/">ICS2020</a>
+            <a href="/2021/05/28/ICS2020/">ICS2020 -01</a>
           </li>
         
           <li>
