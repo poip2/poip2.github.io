@@ -71,6 +71,50 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-LeetCode-md" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/06/08/LeetCode-md/" class="article-date">
+  <time class="dt-published" datetime="2021-06-08T07:33:20.000Z" itemprop="datePublished">2021-06-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/06/08/LeetCode-md/">LeetCode.md</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="二分专题"><a href="#二分专题" class="headerlink" title="二分专题"></a>二分专题</h2><p>70% 单调性<br>95% 存在两段性的性质</p>
+<p>lc 69 , lc 35 , lc 74 , lc 34 , lc 33 ,<br>lc 278 , lc 162 , lc 287 , lc 275<br>####模板一</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(l &lt; r)&#123;</span><br><span class="line">	<span class="keyword">int</span> mid = l + r &gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">check</span>(mid)) r=mid;</span><br><span class="line">	<span class="keyword">else</span> l=mid+<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>####模板二</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(l &lt; r)&#123;</span><br><span class="line">	<span class="keyword">int</span> mid = l + r + <span class="number">1</span> &gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">check</span>(mid)) l = mid;</span><br><span class="line">	<span class="keyword">else</span> r = mid <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>####lc 74.Search in Matrix<br>[[1]] target 3<br>error:heap buffer overflow<br>####lc 34.SearchRange<br>[] 0<br>runtime error:reference binding to null pointer of type’int’<br>####lc 33.SearchRotation</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/06/08/LeetCode-md/" data-id="ckpp6aviw0000q8u60i6qgspn" data-title="LeetCode.md" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-ICS2020" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/05/28/ICS2020/" class="article-date">
@@ -256,7 +300,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li></ul>
     </div>
   </div>
 
@@ -267,6 +311,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2021/06/08/LeetCode-md/">LeetCode.md</a>
+          </li>
         
           <li>
             <a href="/2021/05/28/ICS2020/">ICS2020 -01</a>
