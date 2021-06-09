@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>LeetCode.md | Hexo</title>
+  <title>LeetCode | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="二分专题70% 单调性95% 存在两段性的性质 lc 69 , lc 35 , lc 74 , lc 34 , lc 33 ,lc 278 , lc 162 , lc 287 , lc 275####模板一 123456while(l &lt; r)&amp;#123;	int mid &#x3D; l + r &gt;&gt;1;	if(check(mid)) r&#x3D;mid;	else l&#x3D;mid+1;&amp;#125;">
+  <meta name="description" content="二分专题70% 单调性95% 存在两段性的性质 lc 69 , lc 35 , lc 74 , lc 34 , lc 33 ,lc 278 , lc 162 , lc 287 , lc 275  模板一123456while(l &lt; r)&amp;#123;	int mid &#x3D; l + r &gt;&gt;1;	if(check(mid)) r&#x3D;mid;	else l&#x3D;mid+1;&amp;#125; 模板">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode.md">
-<meta property="og:url" content="http://example.com/2021/06/08/LeetCode-md/index.html">
+<meta property="og:title" content="LeetCode">
+<meta property="og:url" content="http://example.com/2021/06/08/LeetCode/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="二分专题70% 单调性95% 存在两段性的性质 lc 69 , lc 35 , lc 74 , lc 34 , lc 33 ,lc 278 , lc 162 , lc 287 , lc 275####模板一 123456while(l &lt; r)&amp;#123;	int mid &#x3D; l + r &gt;&gt;1;	if(check(mid)) r&#x3D;mid;	else l&#x3D;mid+1;&amp;#125;">
+<meta property="og:description" content="二分专题70% 单调性95% 存在两段性的性质 lc 69 , lc 35 , lc 74 , lc 34 , lc 33 ,lc 278 , lc 162 , lc 287 , lc 275  模板一123456while(l &lt; r)&amp;#123;	int mid &#x3D; l + r &gt;&gt;1;	if(check(mid)) r&#x3D;mid;	else l&#x3D;mid+1;&amp;#125; 模板">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-06-08T07:33:20.000Z">
-<meta property="article:modified_time" content="2021-06-08T10:33:25.175Z">
+<meta property="article:modified_time" content="2021-06-09T08:03:15.002Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -73,9 +73,9 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-LeetCode-md" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-LeetCode" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/06/08/LeetCode-md/" class="article-date">
+    <a href="/2021/06/08/LeetCode/" class="article-date">
   <time class="dt-published" datetime="2021-06-08T07:33:20.000Z" itemprop="datePublished">2021-06-08</time>
 </a>
     
@@ -87,7 +87,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      LeetCode.md
+      LeetCode
     </h1>
   
 
@@ -96,16 +96,16 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h2 id="二分专题"><a href="#二分专题" class="headerlink" title="二分专题"></a>二分专题</h2><p>70% 单调性<br>95% 存在两段性的性质</p>
-<p>lc 69 , lc 35 , lc 74 , lc 34 , lc 33 ,<br>lc 278 , lc 162 , lc 287 , lc 275<br>####模板一</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(l &lt; r)&#123;</span><br><span class="line">	<span class="keyword">int</span> mid = l + r &gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">check</span>(mid)) r=mid;</span><br><span class="line">	<span class="keyword">else</span> l=mid+<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>####模板二</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(l &lt; r)&#123;</span><br><span class="line">	<span class="keyword">int</span> mid = l + r + <span class="number">1</span> &gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">check</span>(mid)) l = mid;</span><br><span class="line">	<span class="keyword">else</span> r = mid <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>####lc 74.Search in Matrix<br>[[1]] target 3<br>error:heap buffer overflow<br>####lc 34.SearchRange<br>[] 0<br>runtime error:reference binding to null pointer of type’int’<br>####lc 33.SearchRotation</p>
-
+<p>lc 69 , lc 35 , lc 74 , lc 34 , lc 33 ,<br>lc 278 , lc 162 , lc 287 , lc 275 </p>
+<h3 id="模板一"><a href="#模板一" class="headerlink" title="模板一"></a>模板一</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(l &lt; r)&#123;</span><br><span class="line">	<span class="keyword">int</span> mid = l + r &gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">check</span>(mid)) r=mid;</span><br><span class="line">	<span class="keyword">else</span> l=mid+<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="模板二"><a href="#模板二" class="headerlink" title="模板二"></a>模板二</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(l &lt; r)&#123;</span><br><span class="line">	<span class="keyword">int</span> mid = l + r + <span class="number">1</span> &gt;&gt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">check</span>(mid)) l = mid;</span><br><span class="line">	<span class="keyword">else</span> r = mid <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="lc-74-Search-in-Matrix"><a href="#lc-74-Search-in-Matrix" class="headerlink" title="lc 74.Search in Matrix"></a>lc 74.Search in Matrix</h3><p>[[1]] target 3<br>error:heap buffer overflow</p>
+<h3 id="lc-34-SearchRange"><a href="#lc-34-SearchRange" class="headerlink" title="lc 34.SearchRange"></a>lc 34.SearchRange</h3><p>[] 0<br>runtime error:reference binding to null pointer of type’int’</p>
+<h3 id="lc-33-SearchRotation"><a href="#lc-33-SearchRotation" class="headerlink" title="lc 33.SearchRotation"></a>lc 33.SearchRotation</h3>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/06/08/LeetCode-md/" data-id="ckpp6aviw0000q8u60i6qgspn" data-title="LeetCode.md" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/06/08/LeetCode/" data-id="ckpp6jhr700003ou697ax868i" data-title="LeetCode" class="article-share-link">Share</a>
       
       
       
@@ -156,7 +156,7 @@
       <ul>
         
           <li>
-            <a href="/2021/06/08/LeetCode-md/">LeetCode.md</a>
+            <a href="/2021/06/08/LeetCode/">LeetCode</a>
           </li>
         
           <li>
